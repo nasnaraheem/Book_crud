@@ -1,0 +1,37 @@
+#api call for list book
+###
+GET http://127.0.0.1:8000/book/
+Accept: application/json
+
+#api call for create book
+###
+POST http://127.0.0.1:8000/book/
+
+{
+    "title" : "randamoozham",
+    "author": "md",
+    "pages" : 400,
+    "price" : 500,
+    "gener" : "story"
+}
+
+#api call for retreive book
+###
+GET http://127.0.0.1:8000/book/1/
+Accept: application/json
+
+#api call for update book
+###
+PUT http://127.0.0.1:8000/book/1/
+
+{
+    "title" : "randamoozham",
+    "author": "md",
+    "pages" : 450,
+    "price" : 500,
+    "gener" : "story"
+}
+
+#api call for delete book
+###
+DELETE http://127.0.0.1:8000/book/1/
